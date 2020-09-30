@@ -5,8 +5,6 @@ Graylog plugin for Splunk
 
 This plugin enables you to selectively forward log messages from Graylog, in real time to one or more Splunk deployments.
 
-![](https://github.com/graylog-labs/graylog-plugin-splunk/blob/master/images/screenshot1.png)
-
 **Required Graylog version:** 2.0.0 and later
 
 ## Use cases
@@ -42,8 +40,6 @@ Set the *Sourcetype* to *Miscellaneous -> generic_single_line* and leave the
 other options as they are. If you know what you are doing you can of course
 change any other settings as you wish.
 
-![](https://github.com/graylog-labs/graylog-plugin-splunk/blob/master/images/screenshot2.png)
-
 Click on *Review* and then *Submit*. Remember the TCP port you configured
 because you will have to configure Graylog to send data to it in the next step.
 
@@ -51,8 +47,6 @@ because you will have to configure Graylog to send data to it in the next step.
 
 In Graylog, go to the outputs configuration of a stream and add a new "Splunk
 output" like this:
-
-![](https://github.com/graylog-labs/graylog-plugin-splunk/blob/master/images/screenshot3.png)
 
 All messages coming into that stream should now be forwarded to your Splunk setup
 in realtime.

@@ -23,14 +23,14 @@ import org.graylog2.plugin.PluginModule;
 import java.util.Collection;
 import java.util.Collections;
 
-public class SplunkOutputPlugin implements Plugin {
+public class SplunkHECOutputPlugin implements Plugin {
     @Override
     public PluginMetaData metadata() {
-        return new SplunkOutputMetaData();
+        return new SplunkHECOutputMetaData();
     }
 
     @Override
     public Collection<PluginModule> modules() {
-        return Collections.singleton(new SplunkOutputModule());
+        return Collections.singleton(new SplunkHECOutputModule());
     }
 }

@@ -24,12 +24,12 @@ import java.net.URI;
 import java.util.Collections;
 import java.util.Set;
 
-public class SplunkOutputMetaData implements PluginMetaData {
+public class SplunkHECOutputMetaData implements PluginMetaData {
     private static final String PLUGIN_PROPERTIES = "org.graylog.plugins.graylog-plugin-splunk/graylog-plugin.properties";
 
     @Override
     public String getUniqueId() {
-        return "com.graylog.splunk.output.SplunkOutputPlugin";
+        return "com.graylog.splunk.output.SplunkHECOutputPlugin";
     }
 
     @Override
@@ -54,7 +54,7 @@ public class SplunkOutputMetaData implements PluginMetaData {
 
     @Override
     public String getDescription() {
-        return "Writes messages to your Splunk installation via TCP.";
+        return "Writes messages to your Splunk installation via TCP or HEC.";
     }
 
     @Override

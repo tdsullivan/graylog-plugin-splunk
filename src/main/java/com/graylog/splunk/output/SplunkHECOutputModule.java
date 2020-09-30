@@ -18,10 +18,10 @@ package com.graylog.splunk.output;
 
 import org.graylog2.plugin.PluginModule;
 
-public class SplunkOutputModule extends PluginModule {
+public class SplunkHECOutputModule extends PluginModule {
     @Override
     protected void configure() {
-        addMessageOutput(SplunkOutput.class);
+        addMessageOutput(SplunkHECOutput.class);
         addConfigBeans();
     }
 }
