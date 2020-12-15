@@ -25,7 +25,7 @@ import java.security.cert.CertificateException;
 public class HECSender implements Sender {
 
     private static final Logger LOG = LoggerFactory.getLogger(HECSender.class);
-    private static final long HTTP_TIMEOUT = 4000;    // 4 seconds (in MS)
+    private static final long HTTP_TIMEOUT = 2000;    // 2 seconds (in MS)
 
     private final URL url;
     private final String token;

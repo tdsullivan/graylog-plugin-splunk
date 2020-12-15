@@ -43,7 +43,7 @@ import org.slf4j.LoggerFactory;
 import org.graylog2.plugin.Message;
 
 public class SplunkHECSenderThread {
-    private static final int MAX_BATCH_ITEMS = 500;    // Log messages
+    private static final int MAX_BATCH_ITEMS = 1000;    // Log messages
     private static final long MAX_BATCH_WAIT = 2000;    // 2 seconds (in MS)
     // private static final long MAX_BATCH_BYTES = 500000; // HEC limit is likely somewhere from 512KB to 1024KB. Using 500KB, to be safe.
 
